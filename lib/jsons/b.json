@@ -3,6 +3,12 @@
       "500": {
         "value": "#e84a5c",
         "type": "color"
+      },
+      "sys": {
+        "button": {
+          "value": "{design B.500}",
+          "type": "color"
+        }
       }
     },
     "fontFamilies": {
@@ -33,10 +39,6 @@
       "0": {
         "value": "50%",
         "type": "letterSpacing"
-      },
-      "1": {
-        "value": "0%",
-        "type": "letterSpacing"
       }
     },
     "paragraphSpacing": {
@@ -45,7 +47,7 @@
         "type": "paragraphSpacing"
       }
     },
-    "button": {
+    "button textstyle": {
       "style B": {
         "value": {
           "fontFamily": "{fontFamilies.nunito}",

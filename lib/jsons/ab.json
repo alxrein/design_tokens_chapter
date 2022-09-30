@@ -3,12 +3,24 @@
       "500": {
         "value": "#3f4c9b",
         "type": "color"
+      },
+      "sys": {
+        "button": {
+          "value": "{design A.500}",
+          "type": "color"
+        }
       }
     },
     "design B": {
       "500": {
         "value": "#e84a5c",
         "type": "color"
+      },
+      "sys": {
+        "button": {
+          "value": "{design B.500}",
+          "type": "color"
+        }
       }
     },
     "fontFamilies": {
@@ -59,7 +71,7 @@
         "type": "paragraphSpacing"
       }
     },
-    "button": {
+    "textstyle button": {
       "style A": {
         "value": {
           "fontFamily": "{fontFamilies.roboto-mono}",
