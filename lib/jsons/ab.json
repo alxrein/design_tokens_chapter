@@ -1,0 +1,114 @@
+{
+    "design A": {
+      "500": {
+        "value": "#3f4c9b",
+        "type": "color"
+      }
+    },
+    "design B": {
+      "500": {
+        "value": "#e84a5c",
+        "type": "color"
+      }
+    },
+    "fontFamilies": {
+      "roboto-mono": {
+        "value": "Roboto Mono",
+        "type": "fontFamilies"
+      },
+      "nunito": {
+        "value": "Nunito",
+        "type": "fontFamilies"
+      }
+    },
+    "lineHeights": {
+      "0": {
+        "value": "AUTO",
+        "type": "lineHeights"
+      }
+    },
+    "fontWeights": {
+      "roboto-mono-0": {
+        "value": "Bold",
+        "type": "fontWeights"
+      },
+      "nunito-1": {
+        "value": "Bold",
+        "type": "fontWeights"
+      }
+    },
+    "fontSize": {
+      "0": {
+        "value": "18",
+        "type": "fontSizes"
+      }
+    },
+    "letterSpacing": {
+      "0": {
+        "value": "50%",
+        "type": "letterSpacing"
+      },
+      "1": {
+        "value": "0%",
+        "type": "letterSpacing"
+      }
+    },
+    "paragraphSpacing": {
+      "0": {
+        "value": "0",
+        "type": "paragraphSpacing"
+      }
+    },
+    "button": {
+      "style A": {
+        "value": {
+          "fontFamily": "{fontFamilies.roboto-mono}",
+          "fontWeight": "{fontWeights.roboto-mono-0}",
+          "lineHeight": "{lineHeights.0}",
+          "fontSize": "{fontSize.0}",
+          "letterSpacing": "{letterSpacing.0}",
+          "paragraphSpacing": "{paragraphSpacing.0}",
+          "textCase": "{textCase.uppercase}",
+          "textDecoration": "{textDecoration.none}"
+        },
+        "type": "typography"
+      },
+      "style B": {
+        "value": {
+          "fontFamily": "{fontFamilies.nunito}",
+          "fontWeight": "{fontWeights.nunito-1}",
+          "lineHeight": "{lineHeights.0}",
+          "fontSize": "{fontSize.0}",
+          "letterSpacing": "{letterSpacing.1}",
+          "paragraphSpacing": "{paragraphSpacing.0}",
+          "textCase": "{textCase.none}",
+          "textDecoration": "{textDecoration.none}"
+        },
+        "type": "typography"
+      }
+    },
+    "textCase": {
+      "uppercase": {
+        "value": "uppercase",
+        "type": "textCase"
+      },
+      "none": {
+        "value": "none",
+        "type": "textCase"
+      }
+    },
+    "textDecoration": {
+      "none": {
+        "value": "none",
+        "type": "textDecoration"
+      }
+    },
+    "radius A": {
+      "value": "0",
+      "type": "borderRadius"
+    },
+    "radius B": {
+      "value": "48",
+      "type": "borderRadius"
+    }
+  }
