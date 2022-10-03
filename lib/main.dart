@@ -1,3 +1,4 @@
+import 'package:design_tokens_chapter/theme/button_style_kit.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -29,8 +30,11 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('Design Tokens Demo')),
       body: Center(
-        child:
-            ElevatedButton(onPressed: () {}, child: const Text('The Button')),
+        child: ElevatedButton(
+          onPressed: () {},
+          style: ButtonKit.primary,
+          child: const Text('The Button'),
+        ),
       ),
     );
   }
