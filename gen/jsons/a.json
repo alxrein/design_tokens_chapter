@@ -49,7 +49,7 @@
         "type": "paragraphSpacing"
       }
     },
-    "button textstyle": {
+    "buttonTextstyle": {
       "style A": {
         "value": {
           "fontFamily": "{fontFamilies.roboto-mono}",
