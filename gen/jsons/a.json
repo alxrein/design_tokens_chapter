@@ -1,7 +1,7 @@
 {
   "KitColors": {
     "button": {
-      "value": "#3F4C9B",
+      "value": "#E84A5C",
       "type": "color"
     },
     "sys": {
@@ -12,7 +12,7 @@
     }
   },
   "fontFamilies": {
-    "roboto-mono": {
+    "button": {
       "value": "Roboto Mono",
       "type": "fontFamilies"
     }
@@ -31,7 +31,7 @@
   },
   "fontSize": {
     "PrimaryButton": {
-      "value": "18",
+      "value": "24",
       "type": "fontSizes"
     }
   },
@@ -48,7 +48,7 @@
     }
   },
   "buttonTextstyle": {
-    "style A": {
+    "KitColors": {
       "value": {
         "fontFamily": "{fontFamilies.roboto-mono}",
         "fontWeight": "{fontWeights.roboto-mono-0}",
@@ -75,7 +75,7 @@
     }
   },
   "ButtonRadius": {
-    "value": "0",
+    "value": "48",
     "type": "borderRadius"
   }
 }

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 class KitColors {
-static const button = Color(0xff3F4C9B);
+static const button = Color(0xffE84A5C);
 }
 
 class fontFamilies {
-
+static const button = 'Roboto Mono';
 }
 
 class lineHeights {
@@ -17,7 +17,7 @@ class fontWeights {
 }
 
 class fontSize {
-static const PrimaryButton = 18.0;
+static const PrimaryButton = 24.0;
 }
 
 class letterSpacing {
@@ -40,4 +40,4 @@ class textDecoration {
 
 }
 
- const ButtonRadius = 0.0;
+ const ButtonRadius = 48.0;

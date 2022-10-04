@@ -70,6 +70,8 @@ class EntityGenerator {
         return _doubleGenerator;
       case 'fontSizes':
         return _doubleGenerator;
+      case 'fontFamilies':
+        return _stringGenerator;
       case 'color':
         return _colorGenerator;
       default:
@@ -79,6 +81,8 @@ class EntityGenerator {
 
   String get _doubleGenerator =>
       '${isInClass ? 'static' : ''} const $_name = $_value.0;';
+  String get _stringGenerator =>
+      '${isInClass ? 'static' : ''} const $_name = \'$_value\';';
   String get _colorGenerator =>
       '${isInClass ? 'static' : ''} const $_name = Color(0xff${(_value as String).substring(1)});';
 }
