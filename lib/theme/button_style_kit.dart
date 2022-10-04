@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class ButtonKit {
   static final primary = ButtonStyle(
-    backgroundColor: MaterialStateProperty.all(g.KitColors.Button),
+    backgroundColor: MaterialStateProperty.all(g.KitColors.button),
     foregroundColor: MaterialStateProperty.all(Colors.white),
     textStyle: MaterialStateProperty.all(
         const TextStyle(fontSize: g.fontSize.PrimaryButton)),

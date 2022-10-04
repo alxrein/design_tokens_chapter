@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class KitColors {
-static const Button = Color(0xff3F4C9B);
+static const button = Color(0xff3F4C9B);
 }
 
 class fontFamilies {

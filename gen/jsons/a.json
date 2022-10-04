@@ -1,83 +1,81 @@
 {
-    "KitColors": {
-      "Button": {
-        "value": "#3F4C9B",
+  "KitColors": {
+    "button": {
+      "value": "#3F4C9B",
+      "type": "color"
+    },
+    "sys": {
+      "button": {
+        "value": "{KitColors.button}",
         "type": "color"
-      },
-      "": {
-        "sys": {
-          "button": {
-            "value": "{design A.500}",
-            "type": "color"
-          }
-        }
       }
-    },
-    "fontFamilies": {
-      "roboto-mono": {
-        "value": "Roboto Mono",
-        "type": "fontFamilies"
-      }
-    },
-    "lineHeights": {
-      "0": {
-        "value": "AUTO",
-        "type": "lineHeights"
-      }
-    },
-    "fontWeights": {
-      "roboto-mono-0": {
-        "value": "Bold",
-        "type": "fontWeights"
-      }
-    },
-    "fontSize": {
-      "PrimaryButton": {
-        "value": "18",
-        "type": "fontSizes"
-      }
-    },
-    "letterSpacing": {
-      "1": {
-        "value": "0%",
-        "type": "letterSpacing"
-      }
-    },
-    "paragraphSpacing": {
-      "0": {
-        "value": "0",
-        "type": "paragraphSpacing"
-      }
-    },
-    "buttonTextstyle": {
-      "style A": {
-        "value": {
-          "fontFamily": "{fontFamilies.roboto-mono}",
-          "fontWeight": "{fontWeights.roboto-mono-0}",
-          "lineHeight": "{lineHeights.0}",
-          "fontSize": "{fontSize.0}",
-          "letterSpacing": "{letterSpacing.0}",
-          "paragraphSpacing": "{paragraphSpacing.0}",
-          "textCase": "{textCase.uppercase}",
-          "textDecoration": "{textDecoration.none}"
-        },
-        "type": "typography"
-      }
-    },
-    "textCase": {
-      "uppercase": {
-        "value": "uppercase",
-        "type": "textCase"
-      }
-    },
-    "textDecoration": {
-      "none": {
-        "value": "none",
-        "type": "textDecoration"
-      }
-    },
-    "ButtonRadius": {
-      "value": "0",
-      "type": "borderRadius"
     }
+  },
+  "fontFamilies": {
+    "roboto-mono": {
+      "value": "Roboto Mono",
+      "type": "fontFamilies"
+    }
+  },
+  "lineHeights": {
+    "0": {
+      "value": "AUTO",
+      "type": "lineHeights"
+    }
+  },
+  "fontWeights": {
+    "roboto-mono-0": {
+      "value": "Bold",
+      "type": "fontWeights"
+    }
+  },
+  "fontSize": {
+    "PrimaryButton": {
+      "value": "18",
+      "type": "fontSizes"
+    }
+  },
+  "letterSpacing": {
+    "1": {
+      "value": "0%",
+      "type": "letterSpacing"
+    }
+  },
+  "paragraphSpacing": {
+    "0": {
+      "value": "0",
+      "type": "paragraphSpacing"
+    }
+  },
+  "buttonTextstyle": {
+    "style A": {
+      "value": {
+        "fontFamily": "{fontFamilies.roboto-mono}",
+        "fontWeight": "{fontWeights.roboto-mono-0}",
+        "lineHeight": "{lineHeights.0}",
+        "fontSize": "{fontSize.PrimaryButton}",
+        "letterSpacing": "{letterSpacing.0}",
+        "paragraphSpacing": "{paragraphSpacing.0}",
+        "textCase": "{textCase.uppercase}",
+        "textDecoration": "{textDecoration.none}"
+      },
+      "type": "typography"
+    }
+  },
+  "textCase": {
+    "uppercase": {
+      "value": "uppercase",
+      "type": "textCase"
+    }
+  },
+  "textDecoration": {
+    "none": {
+      "value": "none",
+      "type": "textDecoration"
+    }
+  },
+  "ButtonRadius": {
+    "value": "0",
+    "type": "borderRadius"
   }
+}
