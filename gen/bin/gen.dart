@@ -68,10 +68,14 @@ class EntityGenerator {
         return _doubleGenerator;
       case 'fontSizes':
         return _doubleGenerator;
+      case 'color':
+        return _colorGenerator;
       default:
         return '';
     }
   }
 
   String get _doubleGenerator => 'const $_name = $_value.0;';
+  String get _colorGenerator =>
+      'const $_name = Color(0xff${(_value as String).substring(1)});';
 }
