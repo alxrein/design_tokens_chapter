@@ -21,6 +21,27 @@ class ClassGenerator {
   String generate() {
     var name = map.key;
 
+    var isClass = false;
+    if (map.value is Map<String, dynamic>) {
+      isClass = (map.value as Map<String, dynamic>).containsKey('type');
+    }
+
+    var code = isClass ? 'class $name {' : '';
+    code += EntityGenerator(isClass ? map.value : map).generate();
+    code += isClass ? '\n}\n\n' : '\n';
+
+    return code;
+  }
+}
+
+class EntityGenerator {
+  final MapEntry<String, dynamic> map;
+
+  EntityGenerator(this.map);
+
+  String generate() {
+    var name = map.key;
+
     var type = '';
     if (map.value is Map<String, dynamic>) {
       type = (map.value as Map<String, dynamic>)['type'] ?? 'class';
