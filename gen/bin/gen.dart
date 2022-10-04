@@ -4,17 +4,31 @@ import 'dart:io';
 void main(List<String> arguments) async {
   var input = await File('jsons/a.json').readAsString();
   Map<String, dynamic> map = jsonDecode(input);
-  print(map);
 
-  // File('lib/jsons/a.json').openRead();
-  // var filePath = p.join(Directory.current.path, 'aa.txt');
-  // print(filePath);
-  // final json = await readJsonFile(
-  //     '/Users/davemac/projects/POC/design_tokens_chapter/lib/jsons/a.json');
-  // print(json);
+  var code = 'import \'package:flutter/material.dart\';\n\n';
+
+  for (var e in map.entries) {
+    code += ClassGenerator(e).generate();
+  }
+  print(code);
 }
 
-Future<List<Map<String, dynamic>>> readJsonFile(String filePath) async {
-  var input = await File(filePath).readAsString();
-  return jsonDecode(input);
+class ClassGenerator {
+  final MapEntry<String, dynamic> map;
+
+  ClassGenerator(this.map);
+
+  String generate() {
+    var name = map.key;
+
+    var type = '';
+    if (map.value is Map<String, dynamic>) {
+      type = (map.value as Map<String, dynamic>)['type'] ?? 'class';
+    }
+
+    var code = type == 'class' ? 'class $name {' : '';
+    code += type == 'class' ? '\n}\n\n' : '\n';
+
+    return code;
+  }
 }
