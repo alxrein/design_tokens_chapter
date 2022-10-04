@@ -70,6 +70,8 @@ class EntityGenerator {
         return _doubleGenerator;
       case 'fontSizes':
         return _doubleGenerator;
+      case 'letterSpacing':
+        return _percentageGenerator;
       case 'fontFamilies':
         return _stringGenerator;
       case 'color':
@@ -81,6 +83,8 @@ class EntityGenerator {
 
   String get _doubleGenerator =>
       '${isInClass ? 'static' : ''} const $_name = $_value.0;';
+  String get _percentageGenerator =>
+      '${isInClass ? 'static' : ''} const $_name = ${(_value as String).replaceFirst('%', '/100')};';
   String get _stringGenerator =>
       '${isInClass ? 'static' : ''} const $_name = \'$_value\';';
   String get _colorGenerator =>

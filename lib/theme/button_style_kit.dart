@@ -7,8 +7,10 @@ class ButtonKit {
     backgroundColor: MaterialStateProperty.all(g.KitColors.button),
     foregroundColor: MaterialStateProperty.all(Colors.white),
     textStyle: MaterialStateProperty.all(GoogleFonts.getFont(
-        g.fontFamilies.button,
-        fontSize: g.fontSize.PrimaryButton)),
+      g.fontFamilies.button,
+      fontSize: g.fontSize.PrimaryButton,
+      letterSpacing: g.letterSpacing.button * g.fontSize.PrimaryButton,
+    )),
     padding:
         MaterialStateProperty.all(const EdgeInsets.fromLTRB(16, 16, 16, 16)),
     shape: MaterialStateProperty.all<OutlinedBorder>(

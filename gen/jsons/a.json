@@ -13,7 +13,7 @@
   },
   "fontFamilies": {
     "button": {
-      "value": "Roboto Mono",
+      "value": "Nunito",
       "type": "fontFamilies"
     }
   },
@@ -36,7 +36,7 @@
     }
   },
   "letterSpacing": {
-    "1": {
+    "button": {
       "value": "0%",
       "type": "letterSpacing"
     }
