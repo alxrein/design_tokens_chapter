@@ -29,8 +29,8 @@ class ClassGenerator {
     var code = isClass ? 'class $name {\n' : '';
 
     if (isClass) {
-      if (map is Map<String, dynamic>) {
-        for (var e in (map as Map<String, dynamic>).entries) {
+      if (map.value is Map<String, dynamic>) {
+        for (var e in (map.value as Map<String, dynamic>).entries) {
           code += EntityGenerator(e).generate();
         }
       }
@@ -47,11 +47,12 @@ class EntityGenerator {
   final MapEntry<String, dynamic> map;
   var _type = '';
   var _value;
+  var _name = '';
 
   EntityGenerator(this.map);
 
   String generate() {
-    var name = map.key;
+    _name = map.key;
 
     if (map.value is Map<String, dynamic>) {
       _type = (map.value as Map<String, dynamic>)['type'] ?? '';
@@ -64,11 +65,13 @@ class EntityGenerator {
   String get _generator {
     switch (_type) {
       case 'borderRadius':
-        return _radiusGenerator;
+        return _doubleGenerator;
+      case 'fontSizes':
+        return _doubleGenerator;
       default:
         return '';
     }
   }
 
-  String get _radiusGenerator => 'const buttonPrimaryRadius = $_value.0;';
+  String get _doubleGenerator => 'const $_name = $_value.0;';
 }
