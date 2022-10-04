@@ -3,14 +3,15 @@ import 'package:flutter/material.dart';
 
 class ButtonKit {
   static final primary = ButtonStyle(
-    backgroundColor: MaterialStateProperty.all(g.buttonPrimaryBackgroundColor),
-    foregroundColor: MaterialStateProperty.all(g.buttonPrimaryForegroundColor),
-    textStyle: MaterialStateProperty.all(g.buttonPrimaryTextStyle),
+    backgroundColor: MaterialStateProperty.all(g.KitColors.Button),
+    foregroundColor: MaterialStateProperty.all(Colors.white),
+    textStyle: MaterialStateProperty.all(
+        const TextStyle(fontSize: g.fontSize.PrimaryButton)),
     padding:
         MaterialStateProperty.all(const EdgeInsets.fromLTRB(16, 12, 16, 12)),
     shape: MaterialStateProperty.all<OutlinedBorder>(
       const RoundedRectangleBorder(
-        borderRadius: BorderRadius.all(Radius.circular(g.buttonPrimaryRadius)),
+        borderRadius: BorderRadius.all(Radius.circular(g.ButtonRadius)),
       ),
     ),
   );
