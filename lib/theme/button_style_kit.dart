@@ -8,7 +8,7 @@ class ButtonKit {
     textStyle: MaterialStateProperty.all(
         const TextStyle(fontSize: g.fontSize.PrimaryButton)),
     padding:
-        MaterialStateProperty.all(const EdgeInsets.fromLTRB(16, 12, 16, 12)),
+        MaterialStateProperty.all(const EdgeInsets.fromLTRB(16, 16, 16, 16)),
     shape: MaterialStateProperty.all<OutlinedBorder>(
       const RoundedRectangleBorder(
         borderRadius: BorderRadius.all(Radius.circular(g.ButtonRadius)),
