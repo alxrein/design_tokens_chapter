@@ -1,6 +1,6 @@
 {
-    "design A": {
-      "500": {
+    "KitColors": {
+      "Button": {
         "value": "#3F4C9B",
         "type": "color"
       },
@@ -32,7 +32,7 @@
       }
     },
     "fontSize": {
-      "0": {
+      "PrimaryButton": {
         "value": "18",
         "type": "fontSizes"
       }
@@ -76,7 +76,7 @@
         "type": "textDecoration"
       }
     },
-    "radius A": {
+    "ButtonRadius": {
       "value": "0",
       "type": "borderRadius"
     }
