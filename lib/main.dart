@@ -33,7 +33,7 @@ class MyHomePage extends StatelessWidget {
         child: ElevatedButton(
           onPressed: () {},
           style: ButtonKit.primary,
-          child: const Text('The Button'),
+          child: const Text('Button'),
         ),
       ),
     );
