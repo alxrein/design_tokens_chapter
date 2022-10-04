@@ -10,7 +10,8 @@ void main(List<String> arguments) async {
   for (var e in map.entries) {
     code += ClassGenerator(e).generate();
   }
-  print(code);
+
+  File('../lib/theme/generated_kit.dart').writeAsString(code);
 }
 
 class ClassGenerator {
@@ -31,7 +32,7 @@ class ClassGenerator {
     if (isClass) {
       if (map.value is Map<String, dynamic>) {
         for (var e in (map.value as Map<String, dynamic>).entries) {
-          code += EntityGenerator(e).generate();
+          code += EntityGenerator(e, isInClass: true).generate();
         }
       }
     } else {
@@ -48,8 +49,9 @@ class EntityGenerator {
   var _type = '';
   var _value;
   var _name = '';
+  final isInClass;
 
-  EntityGenerator(this.map);
+  EntityGenerator(this.map, {this.isInClass = false});
 
   String generate() {
     _name = map.key;
@@ -75,7 +77,8 @@ class EntityGenerator {
     }
   }
 
-  String get _doubleGenerator => 'const $_name = $_value.0;';
+  String get _doubleGenerator =>
+      '${isInClass ? 'static' : ''} const $_name = $_value.0;';
   String get _colorGenerator =>
-      'const $_name = Color(0xff${(_value as String).substring(1)});';
+      '${isInClass ? 'static' : ''} const $_name = Color(0xff${(_value as String).substring(1)});';
 }
