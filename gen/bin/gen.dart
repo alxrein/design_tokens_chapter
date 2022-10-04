@@ -27,7 +27,14 @@ class ClassGenerator {
     }
 
     var code = isClass ? 'class $name {' : '';
-    code += EntityGenerator(isClass ? map.value : map).generate();
+
+    if (isClass && map is Map<String, dynamic>) {
+      for (var e in (map as Map<String, dynamic>).entries) {
+        code += EntityGenerator(e).generate();
+      }
+    } else {
+      code += EntityGenerator(map).generate();
+    }
     code += isClass ? '\n}\n\n' : '\n';
 
     return code;
@@ -36,19 +43,20 @@ class ClassGenerator {
 
 class EntityGenerator {
   final MapEntry<String, dynamic> map;
+  var _type = '';
+  var _value;
 
   EntityGenerator(this.map);
 
   String generate() {
     var name = map.key;
 
-    var type = '';
     if (map.value is Map<String, dynamic>) {
-      type = (map.value as Map<String, dynamic>)['type'] ?? 'class';
+      _type = (map.value as Map<String, dynamic>)['type'] ?? '';
+      _value = (map.value as Map<String, dynamic>)['value'] ?? '';
     }
 
-    var code = type == 'class' ? 'class $name {' : '';
-    code += type == 'class' ? '\n}\n\n' : '\n';
+    var code = _type == 'class' ? 'class $name {' : '';
 
     return code;
   }
