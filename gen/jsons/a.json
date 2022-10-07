@@ -1,7 +1,7 @@
 {
   "KitColors": {
     "button": {
-      "value": "#E84A5C",
+      "value": "#4aff1f",
       "type": "color"
     },
     "sys": {
@@ -44,8 +44,16 @@
       "type": "typography"
     }
   },
-  "ButtonRadius": {
-    "value": "48",
-    "type": "borderRadius"
+  "ButtonRadius": {},
+  "$themes": [],
+  "$metadata": {
+    "tokenSetOrder": [
+      "KitColors",
+      "fontFamilies",
+      "fontSize",
+      "letterSpacing",
+      "buttonTextstyle",
+      "ButtonRadius"
+    ]
   }
 }
