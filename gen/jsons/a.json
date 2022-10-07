@@ -1,5 +1,5 @@
 {
-  "": {
+  "designA": {
     "KitColors": {
       "button": {
         "value": "#E84A5C",
@@ -32,7 +32,7 @@
   "$themes": [],
   "$metadata": {
     "tokenSetOrder": [
-      ""
+      "designA"
     ]
   }
 }
