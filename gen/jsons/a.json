@@ -1,48 +1,38 @@
 {
-  "designA": {
-    "design A": {
-      "KitColors": {
-        "button": {
-          "value": "#9d3200",
-          "type": "color"
-        }
-      },
-      "fontFamilies": {
-        "button": {
-          "value": "Roboto Mono",
-          "type": "fontFamilies"
-        }
-      },
-      "fontSize": {
-        "PrimaryButton": {
-          "value": "24",
-          "type": "fontSizes"
-        }
-      },
-      "letterSpacing": {
-        "button": {
-          "value": "0%",
-          "type": "letterSpacing"
-        }
-      },
-      "ButtonRadius": {
-        "value": "48",
-        "type": "borderRadius"
+  "": {
+    "KitColors": {
+      "button": {
+        "value": "#E84A5C",
+        "type": "color"
       }
     },
-    "$metadata": {
-      "tokenSetOrder": {
-        "0": {
-          "value": "design A",
-          "type": "other"
-        }
+    "fontFamilies": {
+      "button": {
+        "value": "Roboto Mono",
+        "type": "fontFamilies"
       }
+    },
+    "fontSize": {
+      "PrimaryButton": {
+        "value": "24",
+        "type": "fontSizes"
+      }
+    },
+    "letterSpacing": {
+      "button": {
+        "value": "0%",
+        "type": "letterSpacing"
+      }
+    },
+    "ButtonRadius": {
+      "value": "48",
+      "type": "borderRadius"
     }
   },
   "$themes": [],
   "$metadata": {
     "tokenSetOrder": [
-      "designA"
+      ""
     ]
   }
 }
