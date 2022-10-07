@@ -13,20 +13,8 @@
   },
   "fontFamilies": {
     "button": {
-      "value": "Nunito",
+      "value": "Roboto Mono",
       "type": "fontFamilies"
-    }
-  },
-  "lineHeights": {
-    "0": {
-      "value": "AUTO",
-      "type": "lineHeights"
-    }
-  },
-  "fontWeights": {
-    "roboto-mono-0": {
-      "value": "Bold",
-      "type": "fontWeights"
     }
   },
   "fontSize": {
@@ -41,16 +29,10 @@
       "type": "letterSpacing"
     }
   },
-  "paragraphSpacing": {
-    "0": {
-      "value": "0",
-      "type": "paragraphSpacing"
-    }
-  },
   "buttonTextstyle": {
     "KitColors": {
       "value": {
-        "fontFamily": "{fontFamilies.roboto-mono}",
+        "fontFamily": "{fontFamilies.button}",
         "fontWeight": "{fontWeights.roboto-mono-0}",
         "lineHeight": "{lineHeights.0}",
         "fontSize": "{fontSize.PrimaryButton}",
@@ -60,18 +42,6 @@
         "textDecoration": "{textDecoration.none}"
       },
       "type": "typography"
-    }
-  },
-  "textCase": {
-    "uppercase": {
-      "value": "uppercase",
-      "type": "textCase"
-    }
-  },
-  "textDecoration": {
-    "none": {
-      "value": "none",
-      "type": "textDecoration"
     }
   },
   "ButtonRadius": {

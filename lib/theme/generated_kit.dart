@@ -5,15 +5,7 @@ static const button = Color(0xffE84A5C);
 }
 
 class fontFamilies {
-static const button = 'Nunito';
-}
-
-class lineHeights {
-
-}
-
-class fontWeights {
-
+static const button = 'Roboto Mono';
 }
 
 class fontSize {
@@ -24,19 +16,7 @@ class letterSpacing {
 static const button = 0/100;
 }
 
-class paragraphSpacing {
-
-}
-
 class buttonTextstyle {
-
-}
-
-class textCase {
-
-}
-
-class textDecoration {
 
 }
 
