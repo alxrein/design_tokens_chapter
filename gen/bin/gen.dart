@@ -7,7 +7,7 @@ void main(List<String> arguments) async {
 
   var code = 'import \'package:flutter/material.dart\';\n\n';
 
-  for (var e in map.entries) {
+  for (var e in map['designA'].entries) {
     code += ClassGenerator(e).generate();
   }
 
