@@ -1,9 +1,9 @@
 {
-  "design A": {
+  "designA": {
     "design A": {
       "KitColors": {
         "button": {
-          "value": "#79e84a",
+          "value": "#9d3200",
           "type": "color"
         }
       },
@@ -42,7 +42,7 @@
   "$themes": [],
   "$metadata": {
     "tokenSetOrder": [
-      "design A"
+      "designA"
     ]
   }
 }
