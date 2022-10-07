@@ -1,59 +1,48 @@
 {
-  "KitColors": {
-    "button": {
-      "value": "#4aff1f",
-      "type": "color"
+  "design A": {
+    "design A": {
+      "KitColors": {
+        "button": {
+          "value": "#3F4C9B",
+          "type": "color"
+        }
+      },
+      "fontFamilies": {
+        "button": {
+          "value": "Roboto Mono",
+          "type": "fontFamilies"
+        }
+      },
+      "fontSize": {
+        "PrimaryButton": {
+          "value": "24",
+          "type": "fontSizes"
+        }
+      },
+      "letterSpacing": {
+        "button": {
+          "value": "0%",
+          "type": "letterSpacing"
+        }
+      },
+      "ButtonRadius": {
+        "value": "48",
+        "type": "borderRadius"
+      }
     },
-    "sys": {
-      "button": {
-        "value": "{KitColors.button}",
-        "type": "color"
+    "$metadata": {
+      "tokenSetOrder": {
+        "0": {
+          "value": "design A",
+          "type": "other"
+        }
       }
     }
   },
-  "fontFamilies": {
-    "button": {
-      "value": "Roboto Mono",
-      "type": "fontFamilies"
-    }
-  },
-  "fontSize": {
-    "PrimaryButton": {
-      "value": "24",
-      "type": "fontSizes"
-    }
-  },
-  "letterSpacing": {
-    "button": {
-      "value": "0%",
-      "type": "letterSpacing"
-    }
-  },
-  "buttonTextstyle": {
-    "KitColors": {
-      "value": {
-        "fontFamily": "{fontFamilies.button}",
-        "fontWeight": "{fontWeights.roboto-mono-0}",
-        "lineHeight": "{lineHeights.0}",
-        "fontSize": "{fontSize.PrimaryButton}",
-        "letterSpacing": "{letterSpacing.0}",
-        "paragraphSpacing": "{paragraphSpacing.0}",
-        "textCase": "{textCase.uppercase}",
-        "textDecoration": "{textDecoration.none}"
-      },
-      "type": "typography"
-    }
-  },
-  "ButtonRadius": {},
   "$themes": [],
   "$metadata": {
     "tokenSetOrder": [
-      "KitColors",
-      "fontFamilies",
-      "fontSize",
-      "letterSpacing",
-      "buttonTextstyle",
-      "ButtonRadius"
+      "design A"
     ]
   }
 }
