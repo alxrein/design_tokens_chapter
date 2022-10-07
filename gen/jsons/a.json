@@ -2,30 +2,30 @@
   "designA": {
     "KitColors": {
       "button": {
-        "value": "#66e84a",
+        "value": "#ff24f5",
         "type": "color"
       }
     },
     "fontFamilies": {
       "button": {
-        "value": "Roboto Mono",
+        "value": "Comic Sans",
         "type": "fontFamilies"
       }
     },
     "fontSize": {
       "PrimaryButton": {
-        "value": "24",
+        "value": "8",
         "type": "fontSizes"
       }
     },
     "letterSpacing": {
       "button": {
-        "value": "0%",
+        "value": "100%",
         "type": "letterSpacing"
       }
     },
     "ButtonRadius": {
-      "value": "48",
+      "value": "0",
       "type": "borderRadius"
     }
   },
