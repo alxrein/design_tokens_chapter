@@ -2,7 +2,7 @@
   "designA": {
     "KitColors": {
       "button": {
-        "value": "#3F4C9B",
+        "value": "#E84A5C",
         "type": "color"
       }
     },
@@ -25,7 +25,7 @@
       }
     },
     "ButtonRadius": {
-      "value": "0",
+      "value": "48",
       "type": "borderRadius"
     }
   },
