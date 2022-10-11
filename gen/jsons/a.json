@@ -2,7 +2,7 @@
   "designA": {
     "KitColors": {
       "button": {
-        "value": "#ff24f5",
+        "value": "#E84A5C",
         "type": "color"
       }
     },
@@ -14,18 +14,18 @@
     },
     "fontSize": {
       "PrimaryButton": {
-        "value": "8",
+        "value": "32",
         "type": "fontSizes"
       }
     },
     "letterSpacing": {
       "button": {
-        "value": "100%",
+        "value": "0",
         "type": "letterSpacing"
       }
     },
     "ButtonRadius": {
-      "value": "0",
+      "value": "48",
       "type": "borderRadius"
     }
   },
